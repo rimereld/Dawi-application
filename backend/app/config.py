@@ -9,7 +9,7 @@ class Settings(BaseSettings):
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
-    anthropic_api_key: str = "AIzaSyAFcY1I3NzWxV-K0JcHkYLE3-Jk95fbgBU"
+    anthropic_api_key: str = ""
     anthropic_model: str = "gemini-3.5-flash"
 
     database_url: str = "sqlite:///./rx_scanner.db"
